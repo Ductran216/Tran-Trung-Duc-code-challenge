@@ -1,0 +1,14 @@
+.base-input-number {
+  input.ant-input-number-input,
+  input.ant-input-number-input::placeholder,
+  .ant-input-number-handler,
+  .ant-input-number-handler-up-inner,
+  .ant-input-number-handler-down-inner {
+    color: white;
+  }
+  input.ant-input-number-input,
+  input.ant-input-number-input::placeholder {
+    font-family: var(--font-jost);
+    font-size: 18px;
+  }
+}
