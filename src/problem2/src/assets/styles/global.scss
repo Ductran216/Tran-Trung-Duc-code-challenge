@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-jost: "Jost", sans-serif;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background-primary: #fff8f6;
+  --color-gray: #313131;
+  --color-gray-300: #6a6a6a;
+  --color-gray-400: #474747;
+  --color-gray-600: #292929;
+  --color-green-300: #39ff14;
+}
+
+@media (prefers-color-scheme: dark) {
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: var(--font-jost);
+  margin: 0;
+  background: linear-gradient(135deg, #f4f5f9, #eafe80);
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .headline-small {
+    @apply font-jost text-[24px] font-semibold leading-[32px] tracking-tight;
+  }
+  .headline-medium {
+    @apply font-jost text-[28px] font-semibold leading-[32px] tracking-[0.5px];
+  }
+
+  .headline-large {
+    @apply font-jost text-[32px] font-semibold leading-[40px];
+  }
+
+  .title-small {
+    @apply font-jost text-[14px] font-medium leading-[24px];
+    letter-spacing: 0.1px;
+  }
+
+  .title-medium {
+    @apply font-jost text-[16px] font-medium leading-[24px] tracking-[0.15px];
+  }
+
+  .title-large {
+    @apply font-jost text-[18px] font-medium leading-[24px] tracking-wide;
+  }
+
+  .body-small {
+    @apply font-jost text-[12px] font-normal leading-[16px];
+    letter-spacing: 0.4px;
+  }
+
+  .body-medium {
+    @apply font-jost text-[14px] font-normal leading-[16px];
+    letter-spacing: 0.25px;
+  }
+  .body-large {
+    @apply font-jost text-[16px] font-normal leading-[24px] tracking-[0.5px];
+  }
+
+  .body-extra-large {
+    @apply text-left font-jost text-[18px] font-normal leading-[24px];
+  }
+
+  .label-small {
+    @apply font-jost text-[12px] font-medium leading-[16px];
+    letter-spacing: 0.5px;
+  }
+  .label-medium {
+    @apply font-jost text-[14px] font-medium leading-[16px] tracking-[0.1px];
+  }
+}
